@@ -2,7 +2,7 @@
 
 ## Requirement
 
-You will need [Docker](https://www.docker.com/) to run this app locally.
+You will need [Docker](https://www.docker.com/) to run this app.
 
 ## Development
 
