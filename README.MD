@@ -1,5 +1,7 @@
 # README
 
+A dockerized boilerplate project for a Keystone app.
+
 ## Requirement
 
 You will need [Docker](https://www.docker.com/) to run this app.
@@ -34,9 +36,9 @@ cp ./docker/prod.env .env
 ```
 
 This `.env` needs the following variables to be set:
+- `DATABASE_URL`: This boilerplate assumes you use an external Postgres service.
 - `KEYSTONE_PORT`
 - `SESSION_SECRET`
-- `DATABASE_URL`: This boilerplate assumes you use an external Postgres service.
 
 To run the app, run the following:
 
