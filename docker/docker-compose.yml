@@ -3,6 +3,7 @@ services:
     keystone:
         environment:
             PORT: ${KEYSTONE_PORT}
+            DOCKER_DEFAULT_PLATFORM: ${DOCKER_DEFAULT_PLATFORM}
         volumes:
             - keystone_node_modules:/app/node_modules
         ports:
