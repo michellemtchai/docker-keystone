@@ -1,6 +1,8 @@
 version: '3.3'
 services:
     keystone:
+        image: node:16-alpine
+        working_dir: /app
         environment:
             PORT: ${KEYSTONE_PORT}
         volumes:
