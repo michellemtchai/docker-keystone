@@ -7,7 +7,10 @@
     "dev": "keystone dev",
     "start": "keystone start",
     "build": "keystone build",
-    "postinstall": "keystone postinstall"
+    "migrate": "keystone prisma migrate",
+    "deploy": "yarn build && yarn migrate deploy",
+    "postinstall": "keystone postinstall",
+    "migrate-dev": "keystone postinstall --fix && yarn migrate dev"
   },
   "dependencies": {
     "@keystone-6/auth": "^4.0.0",
