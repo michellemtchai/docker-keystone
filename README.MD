@@ -21,7 +21,7 @@ docker-compose up
 You can access the server on your browser via the following url:
 
 ```
-http://localhost:3000
+http://localhost:8080
 ```
 
-**NOTE**: You can change the port via your `.env` file using the `APP_PORT` variable.
+**NOTE**: You can change the port via your `.env` file using the `KEYSTONE_PORT` variable.
