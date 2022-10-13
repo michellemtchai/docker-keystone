@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "predev": "yarn install",
-    "keystone": "$(yarn bin keystone)",
     "dev": "keystone dev",
     "start": "keystone start",
     "build": "keystone build",
