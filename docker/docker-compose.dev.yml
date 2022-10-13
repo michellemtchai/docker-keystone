@@ -2,6 +2,7 @@ version: '3.3'
 services:
     db:
         image: postgres
+        container_name: postgres
         volumes:
             - pgdata:${PGDATA}
         environment:
