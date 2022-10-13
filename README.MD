@@ -18,7 +18,7 @@ To run the app, run the following:
 docker-compose up
 ```
 
-You can access the server on your browser via the following url:
+You can access the keystone UI on your browser via the following url:
 
 ```
 http://localhost:8080
