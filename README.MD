@@ -25,3 +25,9 @@ http://localhost:8080
 ```
 
 **NOTE**: You can change the port via your `.env` file using the `KEYSTONE_PORT` variable.
+
+## Running Migrations
+For the development environment, you can migrate with the following command:
+```
+ docker-compose run keystone yarn migrate-dev
+ ```
