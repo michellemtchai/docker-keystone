@@ -5,7 +5,7 @@
   "scripts": {
     "predev": "/start.sh",
     "dev": "keystone dev",
-    "prestart": "yarn install && yarn migrate deploy",
+    "prestart": "yarn migrate deploy",
     "start": "keystone start",
     "build": "keystone build",
     "postinstall": "keystone postinstall",
