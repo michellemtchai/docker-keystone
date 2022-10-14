@@ -18,7 +18,7 @@ services:
         depends_on:
             - db
         environment:
-            DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}?connect_timeout=300
+            DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
         volumes:
             - ../keystone:/app
 volumes:

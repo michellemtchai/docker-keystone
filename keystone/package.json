@@ -3,14 +3,14 @@
   "version": "1.0.2",
   "private": true,
   "scripts": {
-    "predev": "yarn install",
+    "predev": "/start.sh",
     "dev": "keystone dev",
     "start": "keystone start",
     "build": "keystone build",
+    "postinstall": "keystone postinstall",
     "migrate": "keystone prisma migrate",
     "deploy": "yarn migrate deploy && yarn start",
-    "postinstall": "keystone postinstall",
-    "migrate-dev": "keystone postinstall --fix && yarn migrate dev"
+    "migrate:dev": "yarn postinstall --fix && yarn migrate dev"
   },
   "dependencies": {
     "@keystone-6/auth": "^4.0.0",
