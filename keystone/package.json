@@ -5,11 +5,11 @@
   "scripts": {
     "predev": "/start.sh",
     "dev": "keystone dev",
+    "prestart": "yarn install && yarn migrate deploy",
     "start": "keystone start",
     "build": "keystone build",
     "postinstall": "keystone postinstall",
     "migrate": "keystone prisma migrate",
-    "deploy": "yarn migrate deploy && yarn start",
     "migrate:dev": "yarn postinstall --fix && yarn migrate dev"
   },
   "dependencies": {
