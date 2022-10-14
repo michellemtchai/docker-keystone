@@ -49,5 +49,5 @@ docker-compose up
 ## Running Migrations
 For the development environment, you can migrate with the following command:
 ```
- docker-compose run keystone yarn migrate-dev
+ docker-compose run keystone yarn migrate:dev
  ```
