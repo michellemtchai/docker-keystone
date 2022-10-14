@@ -1,6 +1,8 @@
 version: '3.3'
 services:
     keystone:
+        tty: true
+        stdin_open: true
         environment:
             PORT: ${KEYSTONE_PORT}
             DOCKER_DEFAULT_PLATFORM: ${DOCKER_DEFAULT_PLATFORM}

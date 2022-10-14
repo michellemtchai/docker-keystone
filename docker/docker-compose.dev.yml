@@ -1,7 +1,7 @@
 version: '3.3'
 services:
     db:
-        image: postgres
+        image: postgres:12
         container_name: postgres
         volumes:
             - pgdata:${PGDATA}
@@ -15,8 +15,10 @@ services:
             context: ..
             dockerfile: ./docker/keystone.dev.dockerfile
         command: yarn dev
+        depends_on:
+            - db
         environment:
-            DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
+            DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}?connect_timeout=300
         volumes:
             - ../keystone:/app
 volumes:

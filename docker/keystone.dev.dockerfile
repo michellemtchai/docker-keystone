@@ -1,7 +1,8 @@
-FROM node:16-slim
+FROM node:16-alpine
 
 # setup workdir
 WORKDIR /app
 
-RUN apt-get update && \
-    apt-get --yes install openssl
+# add openssl
+RUN apk upgrade && \
+    apk add --no-cache openssl
