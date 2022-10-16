@@ -14,7 +14,7 @@ First, you will need to create an `.env` so that `Docker` knows where to look fo
 cp ./docker/dev.env .env
 ```
 
-Then, you can modify the schema of your Keystone database to your liking via the file `keystone/schema.ts`. Once you run the app, your database will be initialized that schema.
+Then, you can modify the schema of your Keystone database to your liking via the file `keystone/schema.ts`. Once you run the app, your database will be initialized with that schema.
 
 To run the app, run the following:
 
